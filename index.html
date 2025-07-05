@@ -29,7 +29,7 @@
                         serif: ['Noto Serif SC', 'serif']
                     },
                     backgroundImage: {
-                        'cloud-pattern': "url('img/底图.jpg')",
+                        'cloud-pattern': "url('底图.jpg')",  <!-- 修正路径 -->
                         'cloud-texture': "url('https://picsum.photos/id/380/1200/800')"
                     }
                 }
@@ -131,8 +131,8 @@
                     <!-- 第一个动态海报 -->
                     <div class="bg-black/60 p-4 rounded-lg border border-gold/30 shadow-xl transform transition-all duration-500 hover:shadow-gold/30 hover:shadow-2xl">
                         <div class="aspect-video flex justify-center items-center cursor-pointer poster-container" data-video="video1">
-                            <video muted loop poster="img/图片三.jpg" class="w-full max-w-lg poster-video" id="video1">
-                                <source src="img/动态海报.mp4" type="video/mp4">
+                            <video muted loop poster="图片三.jpg" class="w-full max-w-lg poster-video" id="video1"> <!-- 修正路径 -->
+                                <source src="动态海报.mp4" type="video/mp4"> <!-- 修正路径 -->
                                 您的浏览器不支持视频播放，请尝试更新浏览器。
                             </video>
                         </div>
@@ -141,9 +141,6 @@
                             <p class="text-cloud-light">一张图，用数据可视化的方式，让你秒懂云肩   <span class="text-gold cursor-pointer play-text" data-video="video1">点击解锁动态海报</span></p>
                         </div>
                     </div>
-                    
-                    
-            
                 </div>
             </div>
         </section>
@@ -155,25 +152,21 @@
                     AI换装
                     <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gold"></div>
                 </h2>
-			            <div class="bg-black/60 p-4 rounded-lg border border-gold/30 shadow-xl transform transition-all duration-500 hover:shadow-gold/30 hover:shadow-2xl">
-			                <div class="aspect-video flex justify-center items-center cursor-pointer poster-container" data-video="video2">
-			                    <video muted loop poster="img/封面.jpg" class="w-full max-w-lg poster-video" id="video2">
-			                        <source src="img/视频换装.mp4" type="video/mp4">
-			                        您的浏览器不支持视频播放，请尝试更新浏览器。
-			                    </video>
-			                </div>
-			                <div class="p-6">
-			                    <h3 class="text-xl font-bold text-gold mb-2">AI换装</h3>
-			                    <p class="text-cloud-light">用AI视频的方式，让云肩的历史脉络可视化   <span class="text-gold cursor-pointer play-text" data-video="video2">点击开启历史洄游</span></p>
-			                </div>
-			            </div>
-			        </div>
-			    </div>
-			</section>	
+                <div class="bg-black/60 p-4 rounded-lg border border-gold/30 shadow-xl transform transition-all duration-500 hover:shadow-gold/30 hover:shadow-2xl">
+                    <div class="aspect-video flex justify-center items-center cursor-pointer poster-container" data-video="video2">
+                        <video muted loop poster="封面.jpg" class="w-full max-w-lg poster-video" id="video2"> <!-- 修正路径 -->
+                            <source src="视频换装.mp4" type="video/mp4"> <!-- 修正路径 -->
+                            您的浏览器不支持视频播放，请尝试更新浏览器。
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gold mb-2">AI换装</h3>
+                        <p class="text-cloud-light">用AI视频的方式，让云肩的历史脉络可视化   <span class="text-gold cursor-pointer play-text" data-video="video2">点击开启历史洄游</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>	
     </main>
-
-   
-                        
 
     <!-- 回到顶部按钮 -->
     <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gold text-black flex items-center justify-center shadow-lg transform transition-all duration-300 opacity-0 translate-y-10 hover:bg-gold-dark">
@@ -266,4 +259,4 @@
         });
     </script>
 </body>
-</html>    
+</html>
